@@ -16,7 +16,7 @@ import { arrayMove, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 import SortableContainer from "./SortableContainer";
 import Item from "./Item";
 
-const Container = () => {
+const Contaienr = () => {
   // ドラッグ&ドロップでソート可能なリスト
   const [items, setItems] = useState<{
     [key: string]: string[];
@@ -156,7 +156,7 @@ const Container = () => {
   };
 
   return (
-    <div className='flex flex-row mx-auto'>
+    <div className="flex flex-row mx-auto">
       <DndContext
         sensors={sensors}
         collisionDetection={closestCorners}
@@ -166,23 +166,23 @@ const Container = () => {
       >
         {/* SortableContainer */}
         <SortableContainer
-          id='container1'
+          id="container1"
           items={items.container1}
-          label='container1'
+          label="container1"
         />
         <SortableContainer
-          id='container2'
-          label='container2'
+          id="container2"
+          label="container2"
           items={items.container2}
         />
         <SortableContainer
-          id='container3'
-          label='container3'
+          id="container3"
+          label="container3"
           items={items.container3}
         />
         <SortableContainer
-          id='container4'
-          label='container4'
+          id="container4"
+          label="container4"
           items={items.container4}
         />
         {/* DragOverlay */}
@@ -192,4 +192,4 @@ const Container = () => {
   );
 };
 
-export default Container;
+export default Contaienr;
